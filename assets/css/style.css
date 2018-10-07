@@ -1,0 +1,297 @@
+body{
+  background-image: ;
+  background-color: whitesmoke;
+}
+
+#section {
+    width: 960px;
+    margin: auto;
+}
+
+/*remove the bullets and the margins and padding from the list*/
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ffffff;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: #cccccc;
+}
+
+/*One way to build a horizontal navigation bar is to specify the <li> elements as inline*/
+/* OR--float: left; - use float to get block elements to slide next to each other*/
+
+li {
+    margin-top: 10px;
+    display: inline;
+    float: right;
+}
+
+/*#name a:hover {
+    background-color: #bbb;
+}*/ /*If i wanted my name link to change color*/
+
+#name a{
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+#name {
+    float: left;
+    background: #4aaaa5;
+    font-size: 18pt;
+    margin: 0;
+    padding: 15px;
+}
+
+#contact {
+    padding-top: 10px;
+}
+
+#about a {
+    border-right: 1px solid #bbb; /*this makes the line separators in the nav*/
+}
+
+#portfolio {
+    padding-top: 10px;
+}
+
+#portfolio a {
+    border-right: 1px solid #bbb; /*this makes the line separators in the nav*/
+}
+
+#about {
+    padding-top: 10px;
+}
+
+li a {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:#4aaaa5;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color:#cccccc; 
+    background-color:#cccccc; /* Modern Browsers */
+}
+
+.wrapper {
+    width: 960px;
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+}
+
+#content {
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: #4aaaa5;
+    font-size: 20pt;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 26pt;
+    color: #777777;
+}
+
+#bio-image {
+    padding: 15px;
+    float: left;
+}
+
+/*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    font-size: 6pt;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color:#4aaaa5;
+}
+
+/*contact form*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 0px; /* if you want rounded borders add radius */
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a hover color*/
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+#img1 {
+    width:250px; /* you can use % */
+    height: auto;
+    padding: 10px;
+}
+
+#img2 {
+    width:250px; /* you can use % */
+    height: auto;
+    padding: 10px;
+}
+
+#img3 {
+    width:250px; /* you can use % */
+    height: auto;
+    padding: 10px;
+}
+
+#img4 {
+    width:250px; /* you can use % */
+    height: auto;
+    padding: 10px;
+}
+
+#img5 {
+    width:250px; /* you can use % */
+    height: auto;
+    padding: 10px;
+}
+
+/*text over pictures*/
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block1 {
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    bottom: 460px;
+    left: 30px;
+    background-color: #4aaaa5;
+    /*opacity: 0.9;*/ /*if you want the line to have opacity*/
+    color: white;
+    padding-left: 80px;
+    padding-right: 120px;
+}
+
+.text-block2 {
+    height: 45px;
+    position: absolute;
+    bottom: 460px;
+    left: 305px;
+    background-color: #4aaaa5;
+    /*opacity: 0.9;*/ /*if you want the line to have opacity*/
+    color: white;
+    padding-left: 80px;
+    padding-right: 81.5px;
+}
+
+.text-block3 {
+    height: 45px;
+    text-align: center; /*try and get text to be in center*/
+    position: absolute;
+    bottom: 250px;
+    left: 30px;
+    background-color: #4aaaa5;
+    /*opacity: 0.9;*/ /*if you want the line to have opacity*/
+    color: white;
+    padding-left: 75px;
+    padding-right: 78px;
+}
+
+.text-block4 {
+    height: 45px;
+    text-align: center; /*try and get text to be in center*/
+    position: absolute;
+    bottom: 250px;
+    left: 305px;
+    background-color: #4aaaa5;
+    /*opacity: 0.9;*/ /*if you want the line to have opacity*/
+    color: white;
+    padding-left: 50px;
+    padding-right: 46px;
+}
+
+.text-block5 {
+    height: 45px;
+    text-align: center; /*try and get text to be in center*/
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    background-color: #4aaaa5;
+    /*opacity: 0.9;*/ /*if you want the line to have opacity*/
+    color: white;
+    padding-left: 50px;
+    padding-right: 48px;
+}
+
+#label {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+}
+
+p#label {
+    text-align: center;
+    padding: 5px;
+}
